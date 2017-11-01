@@ -4,11 +4,17 @@
     ViewBag.Title = "Details";
 }
 
+@* currently getting a 400 error for "."
+    Error information = 400 - Bad request. The request could not be understood by the server due to malformed syntax. 
+    The client should not repeat the request without modifications.
+    Syntax was double checked. Error persisted *@
+
 <h2>FULL REVIEW</h2>
 
 <div class="row">
     <div class="fullbar col-sm-6">
         <h2>REVIEW DETAILS </h2>
+        @* Display all details of review when user clicks "details button" *@
         <p>@Html.DisplayNameFor(model => model.Destination.UserDestination): @Html.DisplayFor(model => model.Destination.UserDestination)</p>
         <p>@Html.DisplayNameFor(model => model.DatesOfTravel): @Html.DisplayFor(model => model.DatesOfTravel)</p>
         <p>@Html.DisplayNameFor(model => model.NumofTravelers): @Html.DisplayFor(model => model.NumofTravelers)</p>
@@ -18,71 +24,6 @@
         <p>@Html.DisplayNameFor(model => model.UserReview): @Html.DisplayFor(model => model.UserReview)</p>
     </div>
 </div>
-
-
-
-@*<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Destination.UserDestination)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Destination.UserDestination)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DatesOfTravel)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DatesOfTravel)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NumofTravelers)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NumofTravelers)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Lodging)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Lodging)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Event)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Event)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TravelAgain)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TravelAgain)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.UserReview)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.UserReview)
-        </dd>
-
-    </dl>
-</div>*@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to Reviews", "Index")

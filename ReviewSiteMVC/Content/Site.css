@@ -11,14 +11,23 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
- /*Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column*/ 
-
+ 
 .dl-horizontal dt {
     white-space: normal;
 }
 
+.navbar.navbar-inverse.navbar-fixed-top{
+    color:#07adab;
+    font-size:20px;
+    font-family: 'Kalam', cursive;
+    height: 60px;
+}
+
+.navbar-brand{
+     font-family: 'Permanent Marker', cursive;
+     font-size: 50px;
+     color:#07adab;
+}
 
  .jumbotron{
    background-image: url('oh-the-places-youll-go--dr-seuss-prints.jpg');
@@ -29,77 +38,27 @@
    height: 550px;
    width: 550px;
  }
-
  h1{
      font-family:'Permanent Marker', cursive;
      font-size: 35px;
  }
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#101010;
+   color: #07adab;
+   text-align: center;
+   font-size: 24px;
+}
+
 /*Set width on the form input elements since they're 100% wide by default input,
 select*/
-
 
 textarea {
     max-width: 280px;
 }
 
-/*Code from layout*/
-/*/*body {
-    font-family: 'Permanent Marker', cursive;
-    font-family: 'Kalam', cursive;
-    width: 1200px;
-}*/
-
-/*.navbar.navbar-inverse.navbar-fixed-top{
-    color:#07adab;
-    font-size:30px;
-    font-family: 'Permanent Marker', cursive;
-    height: 90px;
-    background-color:#a984a3;
-}
-
-.navbar-brand{
-     font-family: 'Permanent Marker', cursive;
-     font-size: 50px;
-     color:#07adab;
-}*/
-
-
-/*.nav.navbar-nav.navbar-right{
-    color:#07adab;
-    font-size:30px;
-    font-family: 'Permanent Marker', cursive;
-    height: 135px;
-}*/
-
-
-/*.container{
-    color:#07adab;
-    font-size:30px;
-    font-family: 'Permanent Marker', cursive;
-    height: 135px;
-    background-color:#a984a3;
-}*/
-
-/*#navvy{
-   background-color:#a984a3;
-}*/
-
-/*container.body-content{
-     /*background-color:#a984a3;*/
-     /*align-content:center;
-}*/
-
-/*.footer{
-     width: 1200px;
-     background-color:#a984a3;
-     text-align:center;
-}
-p {
-    width: 1200px;
-    background-color: #a984a3;
-    color: #07adab;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-}*/
 
