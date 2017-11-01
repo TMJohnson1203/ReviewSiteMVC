@@ -1,0 +1,80 @@
+﻿@model ReviewSiteMVC.Models.Review
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Destination.UserDestination)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destination.UserDestination)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatesOfTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatesOfTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumofTravelers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumofTravelers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lodging)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lodging)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Event)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TravelAgain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TravelAgain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserReview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserReview)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

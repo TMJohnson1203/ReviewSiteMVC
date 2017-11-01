@@ -1,0 +1,87 @@
+﻿@model IEnumerable<ReviewSiteMVC.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DESTINATION REVIEWS</h2>
+
+<p>
+    @Html.ActionLink("Write A Review", "Create")
+</p>
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination.UserDestination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatesOfTravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumofTravelers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lodging)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Event)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TravelAgain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserReview)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destination.UserDestination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatesOfTravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumofTravelers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lodging)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Event)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TravelAgain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserReview)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Destination.UserDestination)</h3>
+                    <p>@Html.DisplayNameFor(model => model.Lodging): @Html.DisplayFor(modelItem => item.Lodging)</p>
+                    <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    @*<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>*@
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

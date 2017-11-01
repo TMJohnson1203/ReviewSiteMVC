@@ -1,0 +1,105 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Kalam', cursive;
+    width: 1200px;
+}
+
+ /*Set padding to keep content from hitting the edges*/ 
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ /*Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column*/ 
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+ .jumbotron{
+   background-image: url('oh-the-places-youll-go--dr-seuss-prints.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   height: 550px;
+   width: 550px;
+ }
+
+ h1{
+     font-family:'Permanent Marker', cursive;
+     font-size: 35px;
+ }
+/*Set width on the form input elements since they're 100% wide by default input,
+select*/
+
+
+textarea {
+    max-width: 280px;
+}
+
+/*Code from layout*/
+/*/*body {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Kalam', cursive;
+    width: 1200px;
+}*/
+
+/*.navbar.navbar-inverse.navbar-fixed-top{
+    color:#07adab;
+    font-size:30px;
+    font-family: 'Permanent Marker', cursive;
+    height: 90px;
+    background-color:#a984a3;
+}
+
+.navbar-brand{
+     font-family: 'Permanent Marker', cursive;
+     font-size: 50px;
+     color:#07adab;
+}*/
+
+
+/*.nav.navbar-nav.navbar-right{
+    color:#07adab;
+    font-size:30px;
+    font-family: 'Permanent Marker', cursive;
+    height: 135px;
+}*/
+
+
+/*.container{
+    color:#07adab;
+    font-size:30px;
+    font-family: 'Permanent Marker', cursive;
+    height: 135px;
+    background-color:#a984a3;
+}*/
+
+/*#navvy{
+   background-color:#a984a3;
+}*/
+
+/*container.body-content{
+     /*background-color:#a984a3;*/
+     /*align-content:center;
+}*/
+
+/*.footer{
+     width: 1200px;
+     background-color:#a984a3;
+     text-align:center;
+}
+p {
+    width: 1200px;
+    background-color: #a984a3;
+    color: #07adab;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}*/
+
